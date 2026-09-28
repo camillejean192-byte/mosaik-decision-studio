@@ -2,6 +2,8 @@
 
 MOSAÏK est un atelier visuel local-first pour cartographier les décisions complexes. Les options, critères, signaux et risques deviennent des pièces manipulables dont les relations alimentent une lecture de robustesse transparente.
 
+**Application : [mosaik-decision-studio.vercel.app](https://mosaik-decision-studio.vercel.app/)**
+
 ## Expérience
 
 - canvas spatial avec glisser-déposer et relations éditables ;
