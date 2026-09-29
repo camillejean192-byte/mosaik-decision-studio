@@ -1,19 +1,18 @@
-# MOSAÏK — Decision Studio
+# ORBE — Jardins vivants
 
-MOSAÏK est un atelier visuel local-first pour cartographier les décisions complexes. Les options, critères, signaux et risques deviennent des pièces manipulables dont les relations alimentent une lecture de robustesse transparente.
+ORBE est le site éditorial d’un atelier de paysage fictif basé à Lyon. Il présente une approche sensible et concrète du jardin, des réalisations détaillées, un calendrier saisonnier interactif et un configurateur qui transforme quelques choix en une première feuille de route exploitable.
 
 **Application : [mosaik-decision-studio.vercel.app](https://mosaik-decision-studio.vercel.app/)**
 
 ## Expérience
 
-- canvas spatial avec glisser-déposer et relations éditables ;
-- matrice de robustesse calculée à partir des poids, impacts et niveaux de confiance ;
-- inspecteur contextuel, filtres de calques et mode focus ;
-- palette de commandes, raccourcis clavier, historique annuler/rétablir ;
-- import/export JSON et persistance locale automatique ;
-- états de chargement et état vide, notifications et micro-interactions ;
-- interface responsive avec navigation mobile dédiée ;
-- mode « rayons X » caché pour visualiser les halos de confiance.
+- direction artistique éditoriale et photographie de jardin originale ;
+- transitions d’entrée, révélations au défilement et micro-interactions respectueuses de `prefers-reduced-motion` ;
+- portfolio filtrable avec études de cas accessibles ;
+- cadran des saisons interactif ;
+- parcours projet en quatre étapes, sauvegardé localement ;
+- brief généré, copiable et téléchargeable sans service externe ;
+- navigation, modales et mise en page entièrement responsive.
 
 ## Développement
 
@@ -31,6 +30,4 @@ npm run typecheck
 npm run build
 ```
 
-## Architecture
-
-L’application utilise Next.js App Router et TypeScript. Le moteur de score est isolé dans `lib/scoring.ts`, le modèle métier dans `types/workspace.ts`, les données de démonstration dans `data/seed.ts`, la persistance et l’historique dans `hooks/use-workspace.ts`, et les surfaces interactives dans `components/`.
+Le projet utilise Next.js App Router, React et TypeScript. L’expérience principale se trouve dans `components/orbe-site.tsx`, avec son système visuel dans `app/globals.css`.

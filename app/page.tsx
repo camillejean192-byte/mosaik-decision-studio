@@ -1,5 +1,5 @@
-import { MosaikApp } from "@/components/mosaik-app";
+import { OrbeSite } from "@/components/orbe-site";
 
 export default function HomePage() {
-  return <MosaikApp />;
+  return <OrbeSite />;
 }
